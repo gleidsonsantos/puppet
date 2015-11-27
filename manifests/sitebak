@@ -1,0 +1,9 @@
+node "al-client" {
+	package { 'ntp':
+			ensure => present,
+	}
+
+	service { 'ntpd':
+			ensure	=> running,
+	}
+}
